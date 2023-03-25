@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   #update todos
   put '/todos/:id', to: 'todos#update'
+  #delete todos
+  delete '/todos/:id', to: 'todos#destroy'
+  #view all todos
+  get '/todos', to: 'todos#index'
 
 
 
